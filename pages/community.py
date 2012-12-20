@@ -15,7 +15,7 @@ class CommunityPage(BasePage):
     _tag_locator = (By.CSS_SELECTOR, '#tag_cloud-3 a')
 
     def go_to_community_page(self):
-        self.selenium.get(self.testsetup.base_url + '/community')
+        self.selenium.get(self.testsetup.base_url + '/community/')
         self.is_the_current_page
 
     @property
